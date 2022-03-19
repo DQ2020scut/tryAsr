@@ -1,5 +1,3 @@
-# Copyright 2020 Mobvoi Inc. All Rights Reserved.
-# Author: di.wu@mobvoi.com (DI WU)
 import os
 import argparse
 import glob

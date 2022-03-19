@@ -1,31 +1,3 @@
-# Copyright (c) 2020 Mobvoi Inc. (authors: Binbin Zhang, Xiaoyu Chen, Di Wu)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# Copyright (c) 2021, NVIDIA CORPORATION.  All rights reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 """
 This script is for testing exported onnx encoder and decoder.
 The exported onnx models only support batch offline ASR inference.
@@ -45,10 +17,10 @@ import torch
 import yaml
 from torch.utils.data import DataLoader
 
-from wenet.dataset.dataset import Dataset
-from wenet.utils.common import IGNORE_ID
-from wenet.utils.file_utils import read_symbol_table
-from wenet.utils.config import override_config
+from tryasr_.dataset.dataset import Dataset
+from tryasr_.utils.common import IGNORE_ID
+from tryasr_.utils.file_utils import read_symbol_table
+from tryasr_.utils.config import override_config
 
 import onnxruntime as rt
 import multiprocessing

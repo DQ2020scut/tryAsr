@@ -11,12 +11,12 @@ import yaml
 from torch.utils.data import DataLoader
 from textgrid import TextGrid, IntervalTier
 
-from wenet.dataset.dataset import Dataset
-from wenet.transformer.asr_model import init_asr_model
-from wenet.utils.checkpoint import load_checkpoint
-from wenet.utils.file_utils import read_symbol_table, read_non_lang_symbols
-from wenet.utils.ctc_util import forced_align
-from wenet.utils.common import get_subsample
+from tryasr_.dataset.dataset import Dataset
+from tryasr_.transformer.asr_model import init_asr_model
+from tryasr_.utils.checkpoint import load_checkpoint
+from tryasr_.utils.file_utils import read_symbol_table, read_non_lang_symbols
+from tryasr_.utils.ctc_util import forced_align
+from tryasr_.utils.common import get_subsample
 
 
 def generator_textgrid(maxtime, lines, output):
